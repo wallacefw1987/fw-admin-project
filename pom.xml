@@ -21,8 +21,8 @@
 
 	<modules>
 		<module>core-api</module>
-		<module>ribbon-client</module>
-		<module>service-provider</module>
+		<module>user-service-client</module>
+		<module>user-service-provider</module>
 		<module>hystrix-server</module>
 	</modules>
 
