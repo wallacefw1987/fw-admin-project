@@ -4,6 +4,7 @@ import com.fw.springcloud.service.UserService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
@@ -22,6 +23,8 @@ import org.springframework.web.client.RestTemplate;
 @EnableFeignClients(clients = {UserService.class})
 //启动eureka client
 @EnableEurekaClient
+// 激活服务发现客户端
+@EnableDiscoveryClient
 public class UserServiceClientApplication {
 
     public static void main(String[] args) {

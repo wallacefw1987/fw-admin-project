@@ -13,8 +13,6 @@ public class UserClientController implements UserService {
 
     @Autowired
     UserService userService;
-
-
     @Override
     public Boolean saveUser(@RequestBody User user) {
         return userService.saveUser(user);
