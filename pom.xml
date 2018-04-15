@@ -24,6 +24,7 @@
 		<module>user-service-client</module>
 		<module>user-service-provider</module>
 		<module>hystrix-server</module>
+		<module>eureka-server</module>
 	</modules>
 
 	<dependencies>

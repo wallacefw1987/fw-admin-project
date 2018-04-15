@@ -1,19 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>com.fw.springboot</groupId>
         <artifactId>fw-admin-project</artifactId>
+        <groupId>com.fw.springboot</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <packaging>jar</packaging>
-    <artifactId>core-api</artifactId>
-
+    <artifactId>eureka-server</artifactId>
+    <name>eureka-server</name>
     <dependencies>
-        <!-- 添加 spring cloud Feign 依赖 -->
+        <!-- Eureka Server 依赖 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-feign</artifactId>
+            <artifactId>spring-cloud-starter-eureka-server</artifactId>
         </dependency>
     </dependencies>
+
 </project>

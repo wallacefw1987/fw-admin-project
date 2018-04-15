@@ -8,17 +8,20 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-@Service
-public class UserServiceImpl implements UserService {
+/**
+ * 根据Feign重新设置UserService实体类
+ */
+@Service("myUserService")
+public class UserFeignServiceImpl implements UserService {
 
-    private static final HashMap<Integer,User> userMap = new HashMap<>();
+    private static HashMap<Integer,Object> resultMap = new HashMap<>();
     @Override
     public Boolean saveUser(User user) {
-        return (userMap.put(user.getId(),user) == null);
+        return resultMap.put(user.getId(),user) == null;
     }
 
     @Override
     public List<User> getUserList() {
-        return new ArrayList<User>(userMap.values());
+        return new ArrayList(resultMap.values());
     }
 }
