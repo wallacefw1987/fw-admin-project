@@ -10,6 +10,7 @@
     <packaging>war</packaging>
     <name>user-service-client</name>
     <dependencies>
+        <!-- 依赖 spring cloud ribbon -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>

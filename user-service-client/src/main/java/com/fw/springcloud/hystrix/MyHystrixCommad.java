@@ -2,7 +2,6 @@ package com.fw.springcloud.hystrix;
 
 import com.netflix.hystrix.HystrixCommand;
 import com.netflix.hystrix.HystrixCommandGroupKey;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.client.RestTemplate;
 import java.util.Collection;
 import java.util.Collections;
